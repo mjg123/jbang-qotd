@@ -1,6 +1,6 @@
 # Horsing around with jbang
 
-This repo was created during a stream (YouTube link soon) where I took my first look at [jbang](https://jbang.dev). It contains a single java source file which can be used as a shell script. The script fetches the quote of the day from [https://quotes.rest/qod](https://quotes.rest/qod]) and prints it to STDOUT.
+This repo was created during a stream (YouTube link soon) where I took my first look at [jbang](https://jbang.dev). It contains a single java source file which can be used as a shell script. The script fetches the quote of the day from [https://quotes.rest/qod](https://quotes.rest/qod]) and prints it to STDOUT. (note that this API has a rate-limit of 10 requests per hour).
 
 ## How to run it
 

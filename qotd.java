@@ -53,7 +53,7 @@ public class qotd {
                 e.printStackTrace();
             }
 
-            return "Oh no I didn't get an owl fact";
+            return "Oh no I didn't get a quote";
 
         }
 
