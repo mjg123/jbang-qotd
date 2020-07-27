@@ -13,7 +13,7 @@ Then, either:
 jbang includes some sensible protection for running untrusted code from the web. To trust this script you need to tell jbang:
 
 ```
-jbang trust add https://raw.githubusercontent.com
+jbang trust add https://raw.githubusercontent.com/mjg123/jbang-qotd
 ```
 
 then run it by passing the URL for `qotd.java`:
