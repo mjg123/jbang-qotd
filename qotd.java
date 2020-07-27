@@ -2,7 +2,6 @@
 //DEPS com.fasterxml.jackson.core:jackson-databind:2.11.1
 //JAVA 11+
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.net.URI;
@@ -15,11 +14,8 @@ import static java.lang.System.out;
 public class qotd {
 
     public static void main(String... args) {
-
         out.println(new Helper().getMessage());
-
     }
-
 
     public static class Helper {
 
@@ -43,6 +39,10 @@ public class qotd {
 
                 var jsonNode = mapper.readTree(response.body());
 
+                if (response.statusCode() == 429){
+                    return jsonNode.get("error").get("message").asText();
+                }
+
                 var quoteObj = jsonNode.get("contents").get("quotes").get(0);
 
                 var quote = quoteObj.get("quote").asText();
@@ -55,9 +55,6 @@ public class qotd {
             }
 
             return "Oh no I didn't get a quote";
-
         }
-
     }
-
 }
