@@ -1,5 +1,6 @@
 //usr/bin/env jbang "$0" "$@" ; exit $?
 //DEPS com.fasterxml.jackson.core:jackson-databind:2.11.1
+//JAVA 11+
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
