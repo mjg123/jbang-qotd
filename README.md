@@ -24,10 +24,11 @@ jbang https://raw.githubusercontent.com/mjg123/jbang-qotd/master/qotd.java
 
 ### Download and run locally
 
-Download the file with:
+Download the file and make it executable with:
 
 ```
 wget https://raw.githubusercontent.com/mjg123/jbang-qotd/master/qotd.java
+chmod +x ./qotd.java
 ```
 
 Run with jbang explicitly: `jbang qotd.java` or as a standalone script `./qotd.java`.
